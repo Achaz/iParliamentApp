@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:id="@+id/INV_POPUP">
+
+    <LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent" 			
+			android:orientation="vertical">
+			
+		    <LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content" 
+					android:layout_marginLeft="6dp"
+					android:layout_marginRight="6dp"
+					android:layout_marginTop="4dp"
+					android:layout_marginBottom="4dp"
+					android:background="@drawable/background_card"
+					android:orientation="vertical">
+				
+		            <LinearLayout
+					    android:layout_width="match_parent"
+					    android:layout_height="match_parent"
+					    android:orientation="horizontal" >						    
+						    <LinearLayout
+							    android:layout_width="match_parent"
+							    android:layout_height="wrap_content"
+							    android:orientation="vertical" >  
+									    
+							    <TextView
+							        android:id="@+id/EVT_NAME"
+							        android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							        android:textColor="@color/green"
+							        android:text="@string/nametxt" />
+					
+							    
+							    <TextView
+							        android:id="@+id/EVT_VENUE"
+							        android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							        android:textColor="@color/green"
+							        android:text="Serena Hotel Kla" /> 
+							    
+							    <TextView
+							        android:id="@+id/EVT_DATE"
+							        android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							        android:textColor="@color/green"
+							        android:text="12/05/2013" />
+							    
+							    <TextView
+							        android:id="@+id/EVT_TIME"
+							        android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							        android:textColor="@color/green"
+							        android:text="2:30" /> 
+							        
+							    <TextView
+							        android:id="@+id/EVT_MSG"
+							        android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							        android:text="@string/posttxt" /> 
+							        
+							    <TextView
+							        android:id="@+id/EVT_DETAIL_MSG"
+							        android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							        android:text="@string/posttxt" /> 					        
+								    
+						    </LinearLayout>
+				    </LinearLayout>
+				       
+		            <LinearLayout
+					        android:layout_width="310dp"
+					        android:layout_height="wrap_content"
+					        android:orientation="vertical" >
+					   
+					    <LinearLayout
+					        android:layout_width="310dp"
+					        android:layout_marginLeft="5dp"
+					        android:layout_height="wrap_content"
+					        android:orientation="horizontal" >
+								    <Button
+								        android:id="@+id/INV_GO_BTN" 
+								        android:layout_width="130dp"
+									    android:layout_height="wrap_content"
+									    android:layout_marginTop="5dp"
+									    android:background="@drawable/btn_shape"
+									    android:text="@string/going"
+									    android:textColor="@color/white"/>
+								    
+								    <TextView
+									        android:layout_width="wrap_content"
+									        android:layout_height="wrap_content"
+									        android:text=" " />
+								    
+								    <Button
+								        android:id="@+id/INV_NO_BTN" 
+								        android:layout_width="130dp"
+									    android:layout_height="wrap_content"
+									    android:layout_marginTop="5dp"
+									    android:background="@drawable/btn_shape"
+									    android:text="@string/no"
+									    android:textColor="@color/white"/>
+		               </LinearLayout>
+		    </LinearLayout>
+		    </LinearLayout>
+		
+     </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/whitish">
+
+    <LinearLayout 
+		    android:layout_width="310dp"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical" 
+		    android:layout_marginTop="30dp"
+		    android:layout_marginLeft="5dp">
+		    
+            <TextView 
+                android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="Set your profile picture"
+		        android:textStyle="bold"
+		        android:textColor="@color/background"/>
+           
+                    <LinearLayout
+					        android:layout_width="310dp"
+					        android:layout_height="wrap_content"
+					        android:orientation="horizontal" >
+					        
+		                        <Button
+									android:id="@+id/GET_IMAGE_BTN" 
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:text="Take Photo"
+									android:layout_marginTop="5dp"
+									android:background="@drawable/btn_shape"/>
+								    
+		               </LinearLayout>
+            
+            <TextView 
+                android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text=""/>
+            
+            <TextView 
+                android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="Current Status"
+		        android:textStyle="bold"
+		        android:textColor="@color/background"/>
+        
+            <Spinner
+		        android:id="@+id/CURR_STATUS"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/spinner_shape"
+		        android:entries="@array/statuses" />
+            
+             <TextView 
+                android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text=""/>
+             
+            <TextView 
+                android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="Privacy of posts"
+		        android:textStyle="bold"
+		        android:textColor="@color/background"/>
+            
+            <CheckBox
+		        android:id="@+id/SET_PUBLIC"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Public"
+		        android:textColor="@color/green"
+		        android:checked="true"
+		         />
+            
+		    <CheckBox
+		        android:id="@+id/SET_MEMZ"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="My group members"
+		        android:textColor="@color/paleorange"
+		         />
+		    
+		    <CheckBox
+		        android:id="@+id/SET_FOLLOWERS"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Followers"
+		        android:textColor="@color/whitish2"
+		         />	    
+		    
+		    
+		    <CheckBox
+		        android:id="@+id/SET_PRIVATE"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Private"
+		        android:textColor="@color/orange"
+		         />
+
+    
+		    <Button
+				android:id="@+id/SET_SAVE_BTN" 
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Save Changes"
+				android:layout_marginTop="5dp"
+				android:background="@drawable/btn_shape"/>
+    </LinearLayout>
+    
+</LinearLayout>

@@ -1,0 +1,65 @@
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitish">
+<LinearLayout 
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"    
+    tools:context=".CameraActivity" >
+
+    <ImageView
+        android:id="@+id/UPLOAD2_IMAGE"
+        android:layout_width="310dp"
+        android:layout_height="290dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/f2" />
+    
+    <EditText
+        android:id="@+id/IMAGE2_POST_CAPTION"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/background1"
+        android:hint="Write Something"
+        android:background="@drawable/edit_text_shape" />
+
+     <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        
+      <ImageButton
+        android:id="@+id/UPLOAD2_FROM_CAMERA"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_shape_green"
+        android:src="@android:drawable/ic_menu_camera" />
+
+      <ImageButton
+        android:id="@+id/UPLOAD2_FROM_GALLERY"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:background="@drawable/btn_shape"
+        android:src="@android:drawable/ic_menu_crop" />
+         
+    </LinearLayout>        
+      <Button
+        android:id="@+id/UPLOAD2_POST_BTN"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:text="Post"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_shape" />
+    
+</LinearLayout>
+</ScrollView>

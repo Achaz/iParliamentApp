@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitish"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical" >
+        
+    <EditText
+	        android:id="@+id/TOPIC_POST_MSG"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="@dimen/field_padding"
+	        android:textColor="@color/green"
+	        android:background="@drawable/edit_text_shape"
+	        android:hint="@string/postprompt"
+	        android:ems="10" >
+       <requestFocus />
+    </EditText>
+    
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"        
+        android:orientation="horizontal" >
+    <Button
+        android:id="@+id/TOPIC_POST_BTN" 
+        android:layout_width="260dp"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="5dp"
+	    android:background="@drawable/btn_shape"
+	    android:text="@string/post"
+	    android:textColor="@color/white"/>
+    
+    <ImageButton
+		android:id="@+id/TOPIC_ADDPIC_BTN" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5dp"
+		android:layout_marginLeft="1dp"
+		android:background="@drawable/btn_shape"
+		android:src="@drawable/gallery_picture"/>
+    
+    </LinearLayout>
+    
+    </LinearLayout>
+    
+    <LinearLayout 
+       android:layout_height="wrap_content"
+       android:layout_width="match_parent"
+       android:layout_marginTop="10dp"
+       android:layout_marginLeft="6dp"
+       android:orientation="vertical" >
+    
+        <ListView
+            android:id="@android:id/list"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" >            
+        </ListView>
+        
+    </LinearLayout>
+</LinearLayout>

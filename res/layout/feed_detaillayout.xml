@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+<ScrollView 
+    android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/whitish">
+    
+    <LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent" 			
+			android:orientation="vertical"
+			>
+			
+		    <LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content" 
+					android:layout_marginLeft="6dp"
+					android:layout_marginRight="6dp"
+					android:layout_marginTop="4dp"
+					android:layout_marginBottom="4dp"
+					android:background="@drawable/background_card"
+					android:orientation="vertical">
+				
+		            <LinearLayout
+					    android:layout_width="match_parent"
+					    android:layout_height="match_parent"
+					    android:orientation="horizontal" >	
+					    
+					    <ImageView
+					        android:id="@+id/FD_PROFILE_IMAGE"
+					        android:layout_width="45dp"
+			                android:layout_height="50dp"
+					        android:src="@drawable/f2" 
+					        android:contentDescription="@string/app_name"/>
+					    
+						    <LinearLayout
+							    android:layout_width="match_parent"
+							    android:layout_height="wrap_content"
+							    android:orientation="vertical"
+							    android:layout_marginLeft="3dp" >  
+									    
+							    <TextView
+							        android:id="@+id/FD_POSTER"
+							        android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							        android:textColor="@color/green"
+							        android:text="@string/nametxt" />
+					
+							    
+							    <TextView
+							        android:id="@+id/FD_POST"
+							        android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							        android:text="@string/posttxt" /> 
+							        
+							    <ImageView
+							        android:id="@+id/FD_IMG_POST"
+							        android:layout_width="245dp"
+							        android:layout_height="wrap_content" /> 
+						        
+								    <LinearLayout 
+										android:layout_width="match_parent"
+										android:layout_height="wrap_content"
+										android:orientation="horizontal"
+										android:layout_marginLeft="5dp">
+										        
+										        <ImageView
+											        android:id="@+id/FD_THUMBS_UP"
+											        android:layout_width="wrap_content"
+											        android:layout_height="wrap_content"
+											        android:src="@drawable/rating_good" 
+											        android:contentDescription="@string/app_name"/>
+										        
+										        <TextView
+											        android:id="@+id/FD_THUMBS_UP_NUM"
+											        android:layout_width="wrap_content"
+											        android:layout_height="wrap_content"
+											        android:layout_marginLeft="10dp"
+											        android:textColor="@color/green"
+											        android:layout_weight="1"
+											        android:text="0" />
+										        
+										        <ImageView
+											        android:id="@+id/FD_THUMBS_DOWN"
+											        android:layout_width="wrap_content"
+											        android:layout_height="wrap_content"
+											        android:src="@drawable/rating_bad" 
+											        android:contentDescription="@string/app_name"/>
+										        
+										        <TextView
+											        android:id="@+id/FD_THUMBS_DOWN_NUM"
+											        android:layout_width="wrap_content"
+											        android:layout_height="wrap_content"
+											        android:textColor="@color/red"
+											        android:layout_marginLeft="10dp"
+											        android:layout_weight="1"
+											        android:text="0" />
+										        
+										        <TextView
+											        android:id="@+id/FD_POST_TIME"
+											        android:layout_width="wrap_content"
+											        android:layout_height="wrap_content"
+											        android:textColor="@color/orange"
+											        android:gravity="right"
+											        android:layout_weight="1"
+											        android:text="@string/timetxt" />
+							 </LinearLayout>
+						    </LinearLayout>
+				    </LinearLayout>
+				       
+		            <LinearLayout
+					        android:id="@+id/linearLayout1"
+					        android:layout_width="310dp"
+					        android:layout_height="wrap_content"
+					        android:layout_marginLeft="5dp"
+					        android:orientation="vertical" >
+					        
+					    <EditText
+						        android:id="@+id/FD_COMMENT_MSG"
+						        android:layout_width="match_parent"
+						        android:layout_height="wrap_content"
+						        android:layout_marginTop="@dimen/field_padding"
+						        android:textColor="@color/green"
+						        android:background="@drawable/edit_text_shape_orange"
+						        android:hint="@string/comment"
+						        android:ems="10" >
+					       <requestFocus />
+					    </EditText>
+					   
+					    <LinearLayout
+					        android:id="@+id/linearLayout1"
+					        android:layout_width="310dp"
+					        android:layout_height="wrap_content"
+					        android:orientation="horizontal" >
+								    <Button
+								        android:id="@+id/FD_COMMENT_BTN" 
+								        android:layout_width="142dp"
+									    android:layout_height="wrap_content"
+									    android:layout_marginTop="5dp"
+									    android:background="@drawable/btn_shape"
+									    android:text="@string/comment"
+									    android:textColor="@color/white"/>
+								    
+								    <TextView
+									        android:layout_width="wrap_content"
+									        android:layout_height="wrap_content"
+									        android:text=" " />
+								    
+								    <Button
+								        android:id="@+id/FD_CANCEL_BTN" 
+								        android:layout_width="142dp"
+								        android:maxHeight="50dp"
+								        android:maxWidth="190dp"
+									    android:layout_height="wrap_content"
+									    android:layout_marginTop="5dp"
+									    android:background="@drawable/btn_shape"
+									    android:text="@string/cancel"
+									    android:textColor="@color/white"/>
+		               </LinearLayout>
+		    </LinearLayout>
+		    </LinearLayout>
+		    
+		    <LinearLayout 
+		       android:layout_height="wrap_content"
+		       android:layout_width="match_parent"
+		       android:layout_marginTop="10dp"
+		       android:layout_marginLeft="6dp"
+		       android:orientation="vertical" >
+		    
+		        <ListView
+		            android:id="@android:id/list"
+		            android:layout_height="wrap_content"
+		            android:layout_width="match_parent" >            
+		        </ListView>
+		        
+		    </LinearLayout>
+     </LinearLayout>
+     
+</ScrollView>
+</FrameLayout>

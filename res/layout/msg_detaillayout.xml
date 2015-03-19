@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+    <LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent" 			
+			android:orientation="vertical"
+			android:background="@color/whitish">
+					    
+		        <ListView
+		            android:id="@android:id/list"
+		            android:layout_height="0dp"
+		            android:layout_weight="1"
+		            android:layout_width="match_parent" >            
+		        </ListView>
+		   				       
+	           <LinearLayout
+			        android:id="@+id/linearLayout1"
+			        android:layout_width="310dp"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="6dp"
+			        android:layout_marginBottom="5dp"
+			        android:orientation="horizontal" >
+			        
+					    <EditText
+						        android:id="@+id/MD_REPLY_MSG"
+						        android:layout_width="270dp"
+						        android:layout_height="wrap_content"
+						        android:layout_marginTop="@dimen/field_padding"
+						        android:textColor="@color/background"
+						        android:background="@drawable/edit_text_shape"
+						        android:hint="@string/replyhint"
+						        android:ems="10" >
+					       <requestFocus />
+					    </EditText>
+					
+					    <ImageButton
+					        android:id="@+id/MD_REPLY_BTN" 
+					        android:layout_width="wrap_content"
+						    android:layout_height="match_parent"
+						    android:layout_marginTop="20dp"
+						    android:layout_marginLeft="2dp"
+						    android:background="@drawable/btn_shape"
+						    android:src="@drawable/send"
+						    android:textColor="@color/white"/>
+								    
+			              
+	         </LinearLayout>
+     </LinearLayout>
+</FrameLayout>

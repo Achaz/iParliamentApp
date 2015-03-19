@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whitish" >
+
+    <LinearLayout
+	    android:layout_width="310dp"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginTop="40dp"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+	    
+	    <AutoCompleteTextView
+	        android:id="@+id/RECIPIENT"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/background"
+	        android:dropDownSelector="@color/orange"
+	        android:hint="@string/reciepthint"
+	        android:popupBackground="@color/orange"
+	        android:background="@drawable/edit_text_shape"/>
+	
+	    <EditText
+	        android:id="@+id/COMPOSE_MSG"
+	        android:layout_marginTop="10dp"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/msghint"
+	        android:textColor="@color/background"
+	        android:background="@drawable/edit_text_shape"
+	        android:ems="10"
+	        android:inputType="textMultiLine" />
+	
+	    <Button
+	        android:id="@+id/COMPOSE_BTN"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:textColor="@color/white"
+	        android:background="@drawable/btn_shape"
+	        android:text="@string/sendmsg" />
+    </LinearLayout>
+</LinearLayout>
